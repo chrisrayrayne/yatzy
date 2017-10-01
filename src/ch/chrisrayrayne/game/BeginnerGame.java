@@ -24,7 +24,7 @@ public class BeginnerGame extends Game {
                     }
                     c.complete(p.getDices());
                     System.out.println(c.getPoints());
-                    //System.out.println(Math.addExact(this.sections.get(0).getPoints(), this.sections.get(1).getPoints()));
+                    System.out.println(Math.addExact(this.sections.get(0).getPoints(), this.sections.get(1).getPoints()));
                 }
             }
         }

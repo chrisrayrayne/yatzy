@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class OneQuintuple extends CollectionCombination {
 
     public OneQuintuple(int ruleSetValue) {
-        super(ruleSetValue, 5);
+        super(ruleSetValue, 5, "y");
     }
 
     @Override

@@ -1,6 +1,8 @@
 package ch.chrisrayrayne.player;
 
 import ch.chrisrayrayne.Dice;
+import ch.chrisrayrayne.scoreboard.Section;
+import ch.chrisrayrayne.scoreboard.combinations.Combination;
 
 import java.util.Scanner;
 
@@ -40,5 +42,25 @@ public class HumanPlayer extends Player {
         for(Dice d: this.getDices()) {
             System.out.println(this.getDices().indexOf(d) + ": " + d.toString());
         }
+    }
+
+    @Override
+    public Combination chooseCombination() {
+        this.printScoreCard();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Which to block?");
+        String combinationString = scanner.next();
+        try {
+            for (Section s: this.sections) {
+                for (Combination c: s.getCombinations()) {
+                    if (combinationString.equals(c.getIdentifier()) && !c.isFinished()) {
+                        return c;
+                    }
+                }
+            }
+        } catch(Exception e) {
+
+        }
+        return null;
     }
 }

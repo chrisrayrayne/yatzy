@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class TwoPairs extends CollectionCombination {
 
     public TwoPairs(int ruleSetValue) {
-        super(ruleSetValue, 2);
+        super(ruleSetValue, 2, "tp");
     }
 
     protected int getCount(ArrayList<ArrayList<Dice>> collections, ArrayList<Dice> dices) {

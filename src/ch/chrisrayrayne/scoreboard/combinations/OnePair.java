@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class OnePair extends CollectionCombination {
 
     public OnePair(int ruleSetValue) {
-        super(ruleSetValue, 2);
+        super(ruleSetValue, 2, "op");
     }
 
     @Override

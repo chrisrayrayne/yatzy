@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class OneQuadruple extends CollectionCombination {
 
     public OneQuadruple(int ruleSetValue) {
-        super(ruleSetValue, 4);
+        super(ruleSetValue, 4, "oq");
     }
 
     protected int getCount(ArrayList<ArrayList<Dice>> collections, ArrayList<Dice> dices) {

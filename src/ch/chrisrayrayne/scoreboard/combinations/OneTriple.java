@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class OneTriple extends CollectionCombination {
 
     public OneTriple(int ruleSetValue) {
-        super(ruleSetValue, 3);
+        super(ruleSetValue, 3, "ot");
     }
 
     @Override

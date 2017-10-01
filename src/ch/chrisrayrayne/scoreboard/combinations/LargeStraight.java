@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class LargeStraight extends Combination {
 
     public LargeStraight(int ruleSetValue) {
-        super(ruleSetValue);
+        super(ruleSetValue, "ls");
     }
 
     @Override

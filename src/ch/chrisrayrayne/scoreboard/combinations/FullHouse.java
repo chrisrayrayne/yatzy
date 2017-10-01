@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class FullHouse extends CollectionCombination {
 
     public FullHouse(int ruleSetValue) {
-        super(ruleSetValue, 3);
+        super(ruleSetValue, 3, "fh");
     }
 
     protected int getCountYatzy(ArrayList<ArrayList<Dice>> collections) {

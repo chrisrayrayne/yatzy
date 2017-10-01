@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class SmallStraight extends Combination {
 
     public SmallStraight(int ruleSetValue) {
-        super(ruleSetValue);
+        super(ruleSetValue, "ss");
     }
 
     @Override

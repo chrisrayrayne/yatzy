@@ -18,8 +18,10 @@ public abstract class Game {
     public void init(int ruleSet) {
         this.players.add(new HumanPlayer());
 
-        sections.add(new UpperSection(ruleSet));
-        sections.add(new LowerSection(ruleSet));
+        for (Player p : this.players) {
+            p.sections.add(new UpperSection(ruleSet));
+            p.sections.add(new LowerSection(ruleSet));
+        }
     }
 
     public abstract void play();

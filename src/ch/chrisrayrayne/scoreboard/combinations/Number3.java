@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Number3 extends Combination {
 
     public Number3(int ruleSetValue) {
-        super(ruleSetValue);
+        super(ruleSetValue, "3");
     }
 
     @Override

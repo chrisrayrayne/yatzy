@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Chance extends Combination {
 
     public Chance(int ruleSetValue) {
-        super(ruleSetValue);
+        super(ruleSetValue, "c");
     }
 
     @Override

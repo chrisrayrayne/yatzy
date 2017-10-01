@@ -8,8 +8,8 @@ public abstract class CollectionCombination extends Combination {
 
     protected int COUNT_GOAL = -1;
 
-    public CollectionCombination(int ruleSetValue, int countGoal) {
-        super(ruleSetValue);
+    public CollectionCombination(int ruleSetValue, int countGoal, String identifier) {
+        super(ruleSetValue, identifier);
         this.COUNT_GOAL = countGoal;
     }
 
