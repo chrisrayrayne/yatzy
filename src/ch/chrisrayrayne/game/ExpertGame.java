@@ -18,6 +18,7 @@ public class ExpertGame extends Game {
                             break;
                         }
                     }
+
                     Combination c = p.chooseCombination();
                     c.complete(p.getDices());
                     System.out.println(c.getPoints());

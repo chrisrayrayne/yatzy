@@ -22,6 +22,9 @@ public abstract class Game {
             p.sections.add(new UpperSection(ruleSet));
             p.sections.add(new LowerSection(ruleSet));
         }
+
+        this.sections.add(new UpperSection(ruleSet));
+        this.sections.add(new LowerSection(ruleSet));
     }
 
     public abstract void play();

@@ -4,21 +4,10 @@ import ch.chrisrayrayne.Dice;
 
 import java.util.ArrayList;
 
-public class Number5 extends Combination {
+public class Number5 extends NumberCombination {
 
     public Number5(int ruleSetValue) {
         super(ruleSetValue, "5");
-    }
-
-    @Override
-    public int countPoints(final ArrayList<Dice> dices) {
-        int count = 0;
-        for(Dice d: dices){
-            if(d.isBlocked() && d.getEyesRolled()==5){
-                count += d.getEyesRolled();
-            }
-        }
-        return count;
     }
 
     @Override
